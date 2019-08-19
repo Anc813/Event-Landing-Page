@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/54154622d6.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/timer.js"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=YOUR_API_KEY&callback=initMap"></script>   
+  </head>
+  <body>  
+
+    <nav class="navbar navbar-expand-lg navbar-trans position-absolute">
+      <a href="#" style="padding-left: 300px;">
+        <div style="float: left; margin-right: 10px;"><img src="img/sign.png"></div>
+        <div>          
+          <img src="img/evanto.png" style="width: 160px; height: 30px; display: inline-block; margin-bottom: 5px;">
+          <span style="color: rgb(144, 210, 61); font-size: 16px;">BANGLADESH</span>
+        </div>
+      </a>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: white;"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 300px; padding-right: 300px;">
+        <ul class="navbar-nav ml-auto" style="margin-top: 50px;">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Event Details<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Past Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>  
+    <header>
+    <div class="header_wrap">  
+      <div class="container">        
+        <!--------------------  ТАЙМЕР ------------------------->
+        <div id="countdown" class="row countdown">
+          <div class="col-lg-3 countdown-number">
+            <span class="days countdown-time">20</span>
+            <span class="countdown-text">Days</span>
+          </div>
+          <div class="col-lg-3 countdown-number">
+            <span class="hours countdown-time">03</span>
+            <span class="countdown-text">Hours</span>
+          </div>
+          <div class="col-lg-3 countdown-number">
+            <span class="minutes countdown-time">06</span>
+            <span class="countdown-text">Minutes</span>
+          </div>
+          <div class="col-lg-3 countdown-number">
+            <span class="seconds countdown-time">50</span>
+            <span class="countdown-text">Seconds</span>
+          </div>
+        </div>       
+      </div>
+    </div>  
+    </header>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <div class="container short_description">
+      <div class="row" style="width: 100%;  position: relative; z-index: 6; background-color: white;">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12">          
+          <h2 style="font-weight: 800;">Welcome!</h2>
+          <p>The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too...</p>
+          <p>Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!</p>
+          <p>It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our <b>nvite</b> page here too!</p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+          <form>
+            <h4>Sign up for our event</h4>
+            <div class="form-group">
+              <input type="text" class="form-control" id="name_input" placeholder="Shahriyer Shuvo|">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email_input" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" id="phone_input" placeholder="Phone number">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="username_input" placeholder="Envato Username">
+              <button type="submit" class="btn btn-primary">Let me in!</button>
+              <span>Hurry up, Limited seats availble</span>
+              <span>*we will never spam your email</span>
+            </div>
+          </form>
+        </div>    
+      </div>
+      <!--------------------------------------------------------------------------------------------------------------------->
+      <!--------------------------------------------------------------------------------------------------------------------->
+      <!--------------------------------------------------------------------------------------------------------------------->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="text-center">
+            <img src="img/img_6.jpg" class="rounded" alt="...">
+            <h3>Community</h3>
+            <span style="display: inline-block;">Meet the Community you’ve always talked with, in real life! This meetup will be all about authors engaging each other with interesting coversation
+            and topics. We will have loads of fun.
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="text-center">
+            <img src="img/img_7.jpg" class="rounded" alt="...">
+            <h3>Talk Shop</h3>
+            <span style="display: inline-block;">In this meetup you will get to know the marketplaces better, because that’s why were all here for right? Learn a few tips and tricks from experienced authors from all over the country.
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="text-center">
+            <img src="img/img_8.jpg" class="rounded" alt="...">
+            <h3>War Stories</h3>
+            <span style="display: inline-block;">Gather round fellow authors!Hear the stories of success from your favorite authors and learn how they we able to tackle their problems and become successful.
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--------------------------------------------------------------------------------------------------------------------->
+      <!--------------------------------------------------------------------------------------------------------------------->
+      <!--------------------------------------------------------------------------------------------------------------------->
+      <div style="margin-top: 50px;" class="eventTable">
+        <table class="table" border="0" cellspacing="0" cellpadding="0">
+          <thead>
+            <tr>
+              <th scope="col" style="padding-left: 40px;">Time</th>
+              <th scope="col">Stuff that will happen</th>
+              <th scope="col">Last</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-dark">
+              <td>10am - 12pm</td>
+              <td>Introduction and presentations about Envato</td>
+              <td><i class="fas fa-plus-circle"></i></td>
+            </tr>
+            <tr class="bg-secondary">
+              <td>12pm - 02 pm</td>
+              <td>Sessions by honorable guests and Speakers</td>
+              <td><i class="fas fa-plus-circle"></i></td>
+            </tr>
+            <tr class="bg-dark">
+              <td>02pm - 03pm</td>
+              <td>Break and Mingle time with the authors</td>
+              <td><i class="fas fa-plus-circle"></i></td>
+            </tr>
+            <tr class="bg-secondary">
+              <td>03pm - 05pm</td>
+              <td>Portfolio Review, Rewards and Ending Presentation</td>
+              <td><i class="fas fa-plus-circle"></i></td>
+            </tr>
+          </tbody>
+        </table>
+        <span style="margin-top: 20px;">Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it within</span>
+        <span style="margin-bottom: 20px;">our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could it do? :)</span>            
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid reward_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="reward_left"><img src="img/img_9.png" alt="reward"></div>
+          </div>
+          <div class="col-lg-8">
+            <h1>We reward the Elites!</h1>
+            <p>Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketplace and we want to make known to the people of our country that you are amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community.</p>
+            <p>All you have to do is contact us by clicking the button here and then its just going to the event, saying something motivational and taking that swag while looking amazing infront of thousands of other community members.
+            </p>
+            <p>*Be advised, we will only give you Elite thank you swag for each level of elite you cross.That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.</p>
+            <button class="btn float-right">Bring on the swag!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <div class="container speakers">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="float-left">Speakers</h1>
+          <p style="display: inline-block;">Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects regarding being a digital product author, working at envato and marketing your business.Hope you will have a great time listening to our presentations!</p>
+        </div>  
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="speaker_img">
+            <img src="img/speaker_1.png" alt="speaker">
+            <div class="block">
+              <h1>Mary</h1>
+              <h1>Smith</h1>
+              <hr>
+              <div  class="speaker_descript">More about selling in the Envato Marketplaces</div>
+              <div style="margin-left: 15px; margin-top: 50px; font-size: 30px;">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-dribbble"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="speaker_img">
+            <img src="img/speaker_main.jpg" alt="speaker">
+            <div class="block">
+              <h1>Mary</h1>
+              <h1>Smith</h1>
+              <hr>
+              <div class="speaker_descript">More about selling in the Envato Marketplaces</div>
+              <div style="margin-left: 15px; margin-top: 50px; font-size: 30px;">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-dribbble"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="speaker_img">
+            <img src="img/speaker_2.png" alt="speaker">
+            <div class="block">
+              <h1>Mary</h1>
+              <h1>Smith</h1>
+              <hr>
+              <div class="speaker_descript">More about selling in the Envato Marketplaces</div>
+              <div style="margin-left: 15px; margin-top: 50px; font-size: 30px;">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-dribbble"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="speaker_img">
+            <img src="img/speaker_3.png" alt="speaker">
+            <div class="block">
+              <h1>Mary</h1>
+              <h1>Smith</h1>
+              <hr>
+              <div class="speaker_descript">More about selling in the Envato Marketplaces</div>
+              <div style="margin-left: 15px; margin-top: 50px; font-size: 30px;">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-dribbble"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="speaker_img">
+            <img src="img/img_10.jpg" alt="speaker">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="speaker_img">
+            <img src="img/speaker_4.png" alt="speaker">
+            <div class="block">
+              <h1>Mary</h1>
+              <h1>Smith</h1>
+              <hr>
+              <div class="speaker_descript">More about selling in the Envato Marketplaces</div>
+              <div style="margin-left: 15px; margin-top: 50px; font-size: 30px;">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-dribbble"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="speaker_img">
+            <img src="img/speaker_5.png" alt="speaker">
+            <div class="block">
+              <h1>Mary</h1>
+              <h1>Smith</h1>
+              <hr>
+              <div class="speaker_descript">More about selling in the Envato Marketplaces</div>
+              <div style="margin-left: 15px; margin-top: 50px; font-size: 30px;">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-dribbble"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="speaker_img">
+            <img src="img/speaker_6.png" alt="speaker">
+            <div class="block">
+              <h1>Mary</h1>
+              <h1>Smith</h1>
+              <hr>
+              <div class="speaker_descript">More about selling in the Envato Marketplaces</div>
+              <div style="margin-left: 15px; margin-top: 50px; font-size: 30px;">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-dribbble"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="speaker_img">
+            <img src="img/speaker_7.png" alt="speaker">
+            <div class="block">
+              <h1>Mary</h1>
+              <h1>Smith</h1>
+              <hr>
+              <div class="speaker_descript">More about selling in the Envato Marketplaces</div>
+              <div style="margin-left: 15px; margin-top: 50px; font-size: 30px;">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-dribbble"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid reward_section sponsor_us">
+      <div class="container">
+        <h1>Sponsor Our Event!</h1>
+        <p>If you want to help us making this event lively and successful, help us by sponsoring our event! This will help us bring in more people, have better livestreaming equipment, maybe even our own chef! You can also sponsor us by giving away free swag at the event!</p>
+        <p>Here’s who have sponsored us already:</p>
+        <div class="row">
+          <div class="col-lg-4">
+            <div>
+              <img src="img/mountains.png" alt="mountains">
+              <img src="img/house.png" alt="mountains" style="position: relative; right: 79px; top: 27px; ">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div style="padding-top: 20px;"><img src="img/img_15.png" alt="s"></div>
+          </div>
+          <div class="col-lg-4">
+            <div><img src="img/logo.png" alt="logo"></div>
+          </div>
+          <div class="col-lg-12" style="text-align: center; padding-top: 50px;">
+            <button class="btn">Sponsor Us</button>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <div class="container events">
+      <div class="row">
+        <h1>Past Events</h1>
+        <p>Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 events_ph">
+          <a href="#"><img src="img/event_1.jpg" alt="Past Events"></a>
+        </div>
+        <div class="col-lg-5 events_ph">
+          <a href="#"><img src="img/event_2.jpg" alt="Past Events"></a>
+        </div>
+        <div class="col-lg-5 events_ph">
+          <a href="#"><img src="img/event_3.jpg" alt="Past Events"></a>
+        </div>
+        <div class="col-lg-7 events_ph">
+          <a href="#"><img src="img/event_4.jpg" alt="Past Events"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" style="text-align: center;">
+          <button class="btn btn-dark btn-lg btn-center">View More</button>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid contact_us">
+      <div id="googleMap" class="contact_us_map">
+        <div class="layer">
+          <div class="container contact_us_form">
+            <div class="row">
+              <div class="col-lg-6 contact_us_left">
+                <div style="width: 260px; margin: 0 auto; padding-top: 90px; text-align: center;">
+                  <img src="img/img_13.jpg" alt="Past Events" style="margin-bottom: 40px;">
+                  <p>Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia</p>
+                  <button class="btn">View Map</button>
+                </div>
+              </div>
+              <div class="col-lg-6 contact_us_right">
+                <div style="width: 300px; margin: 0 auto;">
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="ingeniousartist@gmail.com">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function myMap() {
+      var mapProp= {
+          center:new google.maps.LatLng(50.4501,30.523400000000038),
+          zoom:5,
+        };
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      }
+    </script>
+    
+    <footer>
+      <div style="margin: 0 auto; width: 150px;">
+        <a href="#" style="display: inline-block;">
+          <img src="img/netw/twitter.png">
+        </a>
+        <a href="#" style="display: inline-block;">
+          <img src="img/netw/fb.png">
+        </a>
+        <a href="#" style="display: inline-block;">
+          <img src="img/netw/linkedin.png">
+        </a>
+        <a href="#" style="display: inline-block;">
+          <img src="img/netw/Instagram.png">
+        </a>
+      </div>
+      <div style="margin: 0 auto; width: 350px; color: white; font-size: 16px; font-weight: 400; padding-top: 20px;">
+        <span style="width: 100; text-align: center; display: block;">Hope we see you at the event!</span>
+        <span style="width: 100; text-align: center; display: block;">All Rights Reserved. Envato Bangladesh © 2015</span>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,525 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #242424;
+	font-size: 14px;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+.container {
+	width: 1050px;
+}
+
+header {
+  	background-color: rgb(74, 69, 75);
+  	position: relative;
+  	top: 0px;
+  	z-index: 1;
+  	width: 100%;
+  	height: 650px;
+  	background-image: url(img/wallpaper_0.jpg);
+	background-size: cover;
+	background-repeat: no-repeat; 	  	
+}
+
+.header_wrap {
+	position: relative;
+  	top: 0px;
+  	z-index: 2;
+  	width: 100%;
+  	height: 650px;
+  	background: rgba(01, 01, 01, 0.5);
+}
+
+
+/*header:after {
+	background: inherit;
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: skewY(-5deg);
+	transform-origin: 100%;
+	z-index: 6;
+	border: 3px solid green;
+}
+*/
+nav {
+	background-color: transparent;
+	color: red;
+	text-transform: uppercase;
+	z-index: 2;
+	/*border: 2px solid red;*/
+}
+
+nav a {
+	display: block;
+
+}
+nav img {
+	height: 50px;
+	width: 50px;
+}
+
+nav .nav-link {
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+	height: 100px;
+	min-width: 150px;
+	text-align: center;
+}
+.navbar-trans {
+  background-color: transparent; 
+}
+
+
+/*Стили для таймера*/
+.countdown {
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 100;
+    font-size: 30px;
+    width: 850px;
+    height: 200px;
+    border: 2px solid rgb(144, 210, 61);
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 7;
+    top: 150px;
+}
+ 
+.countdown-number {	
+    border-radius: 3px;
+
+}
+ 
+.countdown-time {
+    border-radius: 3px;
+    display: block;
+    height: 150px;
+    line-height: 150px;
+    color: rgb(255, 255, 255);
+    font-size: 130px;
+    text-align: center;
+    font-weight: 100;
+}
+ 
+.countdown-text {
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.short_description {
+	margin-top: 50px;
+}
+
+header img {
+	position: relative;
+	width: 120px;
+	height: 145px;
+}
+
+.layer1 {
+	z-index: 9;
+	top: 180px;
+
+}
+
+.layer2 {
+	top: 20px;
+	z-index: 4;
+	right: 60px;
+}
+.layer3 {
+	z-index: 3;
+	right: 120px;
+}
+.layer4 {
+	z-index: 2;
+	right: 150px;
+	bottom: 20px;
+}
+.layer5 {
+	z-index: 1;
+	right: 190px;
+	bottom: 30px;
+}
+
+.short_description form {
+	padding-top: 35px;
+	padding-left: 30px;
+	border: 1px solid lightgrey; 
+	/*height: 530px; */
+	width: 430px;
+	position: relative; 
+	top: -200px; 
+	left: 100px; 
+	background-color: white;
+
+	}
+
+form h4 {
+	color: rgb(37, 37, 37);
+	width: 100%;
+	text-align: center;
+	font-weight: 900;
+	margin-bottom: 10px;
+
+}
+
+.form-group input {
+	width: 370px;
+	height: 55px;
+	margin-top: 15px; 
+}
+
+.form-control:focus {
+	border: 1px solid rgb(144, 210, 61);
+	box-shadow: none;
+}
+
+.form-group input::placeholder {
+	color: rgb(190, 190, 190);
+}
+
+.form-group .btn {
+	margin: 0 auto;
+	width: 370px;
+	color: rgb(255, 255, 255);
+	font-size: 22px;
+	font-weight: 500;
+	height: 55px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+	background-color: rgb(144, 210, 61);
+	border: 1px solid rgb(144, 210, 61);
+}
+
+.form-group span {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	color: rgb(189, 189, 189);
+}
+
+table {
+	min-height: 300px; 
+	border-radius: 10px; 
+	min-width: 100px;
+
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+table tr:first-child th:first-child {
+    border-top-left-radius: 15px;
+}
+table tr:first-child th:last-child {
+    border-top-right-radius: 15px;
+}
+
+table th,td {
+	color: white;
+	font-size: 18px;
+} 
+
+thead {
+	background-color: rgb(144, 210, 61);
+	font-size: 20px;
+	color: white;
+}
+table .fas {
+	font-size: 30px;
+}
+
+.eventTable span {
+	color: rgb(75, 77, 79);
+	font-weight: 500;
+	display: inline-block; 
+	text-align: center; width: 100%;
+}
+
+.reward_section {
+	height: 400px;
+	width: 100%;
+	margin-top: 300px;
+	/*background-color: rgb(75, 77, 79);*/
+	position: relative;
+  	z-index: 1;
+  	margin-bottom: 300px;
+  	color: white;
+}
+
+.reward_section .reward_left {
+	position: relative;
+	bottom: 250px;
+}
+
+.reward_section p, h1 {
+	text-align: right;
+}
+
+
+.reward_section:before,
+.reward_section:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+
+.reward_section:before {
+    /*background-color: rgb(75, 77, 79);*/
+	bottom: 0;
+	height: 50%;
+	transform: skewY(-5deg);
+	transform-origin: 100%;
+	background-image: url(img/wallpaper_1.jpg);
+	background-size: cover;
+  }
+
+.reward_section:after {
+	/*background-color: rgb(75, 77, 79);*/
+	background-image: url(img/wallpaper_1.jpg);
+	background-size: cover;
+	bottom: 0;
+	height: 150%;
+	transform: skewY(-5deg);
+	transform-origin: 100%;
+}
+
+.reward_section button {
+	width: 200px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	background-color: rgb(144, 210, 61);
+	border-radius: 10px;
+	color: white;
+	font-size: 18px;
+	margin-top: 20px;
+
+}
+
+.speakers {
+	color: rgb(75, 77, 79);;
+}
+
+.speaker_img {
+	height: 300px;
+	width: 295px;
+	margin-bottom: 45px;
+	position:relative;	
+}
+
+.block {
+    position:absolute;
+    height: 300px;
+	width: 295px;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background:rgba(144,210,61, 0.7);
+    display:none;
+    border-radius: 25px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.block h1 {
+	text-align: left;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.block hr {
+	width: 100px;
+	background-color: rgb(255, 255, 255); 
+	position: absolute;
+	left: 10px;
+	height: 5px;
+	margin: 0px;
+	margin-left: 23px;
+}
+
+.speaker_img:hover .block {
+	display: block;
+}
+
+
+.speakers img {
+	height: 300px;
+	width: 295px;
+	border-radius: 25px;
+}
+
+.reward_section .col-lg-4 { 
+	text-align: center;
+}
+
+.sponsor_us {
+	background-image: url(img/wallpaper_1.jpg);
+	background-repeat: no-repeat;
+}
+
+.sponsor_us h1 {
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+.speakers .speaker_descript {
+	margin-top: 20px; 
+	margin-left: 15px; 
+	font-size: 16px; 
+	font-weight: 500;
+}
+
+.sponsor_us p {
+	color: white;
+	text-align: center;
+	margin-top: 30px;
+}
+.events .events_ph {
+	/*border: 1px solid red;*/
+	padding: 0px;
+}
+
+.events a {
+	height: 400px;
+}
+
+.events img {
+	width: 100%;
+	height: 400px;
+}
+.events button {
+	height: 55px;
+	width: 200px;
+	margin-top: 50px;
+	border-radius: 15px;
+}
+
+.contact_us {
+	padding: 0px;
+	margin-top: 100px;
+}
+
+.contact_us_map {
+	width:100%;
+	height:660px;
+	position: relative;
+	margin: 0px;
+	background: url('img/map.jpg');
+}
+
+.contact_us_form {
+	margin-top: 80px;
+}
+
+.contact_us .layer {
+	background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact_us_form {
+	height: 500px; 
+	background-color: white; 
+
+} 
+
+.contact_us_left .btn {
+	height: 55px; 
+	width: 200px; 
+	border-radius: 15px; 
+	background-color: rgb(144, 210, 61); 
+	color: white; 
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.contact_us_right {
+	padding-top: 50px;	
+}
+
+.contact_us_right input {
+    width: 300px;
+    height: 45px;
+    margin-top: 15px;
+}
+
+.contact_us_right textarea.form-control {
+	width: 300px;
+    min-height: 200px;
+}
+.contact_us_right .btn {
+	background-color: #373737;
+	border: 1px solid #373737;
+	width: 300px;
+	height: 55px;
+	color: white; 
+}
+footer {
+	height: 150px;
+	width: 100%;
+	background-color: #90D23D;
+	padding-top: 20px; 
+}
+
+footer img {
+	width: 32px;
+	height: 32px;
+}
+
+
+/*
+footer  ul a {
+ 	display: inline-block;
+ 	width: 47px;
+ 	height: 47px; 	
+ 	background-repeat: no-repeat;
+}
+
+footer  ul a.fb {
+	background-image: url(img/netw/facebook.jpg);
+}
+footer  ul a.tw {
+	background-image: url(img/netw/twitter.jpg);
+}
+footer  ul a.linkedin {
+	background-image: url(img/netw/linkedin.jpg);
+}
+footer  ul a.tumb {
+	background-image: url(img/netw/tumb.jpg);
+}
+footer  ul a.gPlus{
+	background-image: url(img/netw/g+.jpg);
+}
+*/

@@ -1,0 +1,36 @@
+@media (max-width: 360px) {
+	nav a {
+    	display: none;
+	}
+}
+
+@media (max-width: 360px) {
+	#countdown {
+    	display: none;
+	}
+}
+
+@media (max-width: 360px) {
+	#navbarSupportedContent {
+    	padding-left: 0px !important;
+    	padding-right: 0px !important;
+	}
+}
+@media (max-width: 360px) {
+	nav a {
+    	padding-left: 0px;
+    	padding-right: 0px;
+	}
+}
+@media (max-width: 360px) {
+	header {
+    	display: none;
+	}
+}
+@media (max-width: 360px) {
+	.short_description form {
+    	position: relative;
+    	bottom: 0px !important; 
+    	left: 0px !important;
+	}
+}
